@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+		<link rel="stylesheet" href="./style.css" />
+
+		<script src="./animate.js"></script>
+
+		<title>HCDE 411 Final | Checkouts at the Seattle Public Library</title>
+	</head>
+
+	<body>
+
+		<section class="reveal-vis active-vis">
+
+			<div class="vis-container">
+
+				<div id="vis1">
+					<h3 style="font-size: 3.5em;"> The Impact of COVID-19 on Monthly <br>Checkouts from the Seattle Public Library </h3>
+					<p style="font-size: 1em; font-weight: normal; color: #a2a2a2;">By Tatum Lindquist, Andrew Kwon, Andrew Christensen, and Alejandro Striefel</p>
+					<img src="./static/vis1.PNG" style="width: 75%; margin-bottom: 30px;" alt="A stacked bar chart shows the amount of monthly checkouts between the years 2017 and 2022, separating them by physical or digital items. A sharp drop in checkouts overall can be seen starting in March 2020, corresponding with the onset of the COVID-19 pandemic." />
+				</div>
+			</div>
+		</section>
+
+		<section class="reveal-vis">
+
+			<div class="vis-container">
+
+				<h3>Variations in Checkouts Month-to-Month</h3>
+				<div id="vis2">
+					
+					<iframe src="./chart.html" style="width: 75%; height: 550px; margin-left: 25%;" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="reveal-vis">
+			<div class="vis-container">
+
+				<h3>Subjects By Month</h3>
+				<div id="vis3">
+					
+					<iframe src="./SubjectsByMonth_Year.html" style="width: 95%; height: 450px; margin-left: 23%;" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="reveal-vis">
+
+			<div class="vis-container">
+
+				<div id="vis4">
+					<h3> Top 5 Titles Checked Out By Year </h3>
+				</div>
+
+				<div id="carouselContainer" class="carousel slide container">
+
+					<div class="carousel-inner">
+
+						<div class="carousel-item active">
+
+							<h4>2017</h4>
+
+							<div class="container">
+
+								<div class="row">
+
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Arrival.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">100%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 4,048 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Hillbilly Elegy.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">50%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">50%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 8,059 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Underground Railroad.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">50%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">50%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 7,633 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Economist.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">100%</p>
+											</div>
+											
+
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 4,711 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The New Yorker.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">100%</p>
+											</div>
+											
+
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 3,790 checkouts</p>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="carousel-item">
+
+							<h4>2018</h4>
+
+							<div class="container">
+
+								<div class="row">
+
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Educated.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">62%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">38%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 9,004 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/So You Want to Talk About Race.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">22%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">78%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 6,255 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The New Yorker.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">100%</p>
+											</div>
+											
+
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 5,974 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Power.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">40%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">60%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 7,292 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Hate U Give.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">28%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">72%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 7,110 checkouts</p>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="carousel-item">
+
+							<h4>2019</h4>
+
+							<div class="container">
+
+								<div class="row">
+
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Crazy Rich Asians.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">90%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">10%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 8,344 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Educated.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">66%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">34%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 15,614 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Normal People.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">31%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">69%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 6,410 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Where the Crawdads Sing.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">54%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">46%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 15,734 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Becoming.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">66%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">34%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 21,535 checkouts</p>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="carousel-item">
+
+							<h4>2020</h4>
+
+							<div class="container">
+
+								<div class="row">
+
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/So You Want to Talk About Race.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">98%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">2%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 13,553 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Becoming.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">96%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">4%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 12,683 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Where the Crawdads Sing.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">85%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">15%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 11,666 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Educated.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">92%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">8%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 10,387 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Talking to Strangers.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">85%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">15%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 9,090 checkouts</p>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="carousel-item">
+
+							<h4>2021</h4>
+
+							<div class="container">
+
+								<div class="row">
+
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Vanishing Half.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">77%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">23%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 16,776 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/A Promised Land.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">91%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">9%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 11,341 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Midnight Library.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">100%</p>
+											</div>
+											
+
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 8,766 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Braiding Sweetgrass.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">93%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">7%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 7,271 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Nomadland.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">94%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">6%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 6,827 checkouts</p>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="carousel-item">
+
+							<h4>2022</h4>
+
+							<div class="container">
+
+								<div class="row">
+
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The Last Thing He Told Me.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">91%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">9%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 8,216 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Braiding Sweetgrass.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">93%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">7%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 7,739 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/101 Essays that will Change the way You Think.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">99%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">1%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 4,816 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/Cloud Cuckoo Land.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">83%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">17%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 10,317 checkouts</p>
+										</div>
+									</div>
+									
+									<div class="col-sm">
+
+										<div class="row">
+
+											<img class="cover" src="./static/The House of Broken Angels.JPG" />
+										</div>
+
+										<div class="row h-15" style="width:150px;">
+
+											
+											<div id="usage_digital" class="col-sm" style="padding-top: 15px;">
+												<p class="caption" style="color: #FFFFFF;">82%</p>
+											</div>
+											
+
+											
+											<div id="usage_physical" class="col-sm" style="padding-top: 15px;">
+												<p class="caption">18%</p>
+											</div>
+											
+
+										</div>
+
+										<div class="row" style="padding-top: 5px;">
+
+											<p class="caption" style="text-align: left;">Total of 8,460 checkouts</p>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+						
+
+					</div>
+
+					<a class="carousel-control-prev" href="#carouselContainer" role="button" data-slide="prev">
+
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+
+					<a class="carousel-control-next" href="#carouselContainer" role="button" data-slide="next">
+
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
