@@ -23,7 +23,7 @@ body {
 
 h3 {
 	font-size: 2.5em;
-	font-weight: normal;
+	font-weight: bold;
 	margin-bottom: 30px;
 	text-align: center;
 	color: var(--teal);
@@ -31,7 +31,7 @@ h3 {
 
 h4 {
 	font-size: 2em;
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 15px;
 	text-align: center;
 	color: #000000;
@@ -72,6 +72,13 @@ p.caption {
 	font-size: 0.75em;
 	color: #1d1d1d;
 	text-align: center;
+}
+
+p.body_text {
+	font-weight: normal;
+	font-size: 0.5em;
+	color: #1d1d1d;
+	text-align: left;
 }
 
 .carousel-control-prev{
