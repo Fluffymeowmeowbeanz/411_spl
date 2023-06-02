@@ -37,6 +37,14 @@ h4 {
 	color: #000000;
 }
 
+select {
+	border-color: var(--violet);
+	color: var(--violet);
+	font-weight: bold;
+	margin-left: 10px;
+	background-color: transparent;
+}
+
 #usage_digital {
 	background: var(--teal);
 	border-color: transparent;
@@ -49,16 +57,25 @@ h4 {
 	font-weight: bold;
 }
 
-.reveal-vis{
-	position: relative;
-	transform: translateY(150px);
-	opacity: 0;
-	transition: 2s all ease;
+.legend {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.reveal-vis, .active-vis{
-	transform: translateY(0);
-	opacity: 1;
+.legend_digital, .legend_physical {
+	width: 50px; 
+	height: 50px; 
+	display: inline; 
+	margin-right:15px;
+}
+
+.legend_digital {
+	background-color: #2C869E;
+}
+
+.legend_physical {
+	background-color: #EBB42A;
 }
 
 img.cover {
@@ -76,9 +93,11 @@ p.caption {
 
 p.body_text {
 	font-weight: normal;
-	font-size: 0.5em;
+	font-size: 1em;
 	color: #1d1d1d;
 	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .carousel-control-prev{

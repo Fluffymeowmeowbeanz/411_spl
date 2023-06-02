@@ -9,8 +9,6 @@
 
 		<link rel="stylesheet" href="./style.css" />
 
-		<script src="./animate.js"></script>
-
 		<title>HCDE 411 Final | Checkouts at the Seattle Public Library</title>
 	</head>
 
@@ -21,9 +19,12 @@
 			<div class="vis-container">
 
 				<div id="vis1">
-					<h3 style="font-size: 3.5em;"> The Impact of COVID-19 on Monthly <br>Checkouts from the Seattle Public Library </h3>
+					<h3 style="font-size: 3.5em;"> The Impact of COVID-19 on Monthly Checkouts from the Seattle Public Library </h3>
+
 					<p style="font-size: 1em; font-weight: normal; color: #a2a2a2;">By Tatum Lindquist, Andrew Kwon, Andrew Christensen, and Alejandro Striefel</p>
-					<p class="body_text">Below, the stacked bar chart shows the total monthly checkouts between 2017 and 2022 and distinguishing them between digital versus physical items. Most clearly, there's a sharp drop in checkouts overall, starting in March 2020, corresponding with the onset of the COVID-19 pandemic. However, digital checkouts remain, and even as physical checkouts start to rise again after March 2020, they do not rise back to where they were before.</p>
+
+					<p class="body_text">During the COVID-19 pandemic, the way we interact with public spaces and activities changed drastically. Our project looks to visualize Seattle Public Libraries checkout data to reveal trends in library use and media consumption during the COVID-19 pandemic. Below, the stacked bar chart shows the total monthly checkouts between 2017 and 2022 and distinguishing them between digital versus physical items. Most clearly, there's a sharp drop in checkouts overall, starting in March 2020, corresponding with the onset of the COVID-19 pandemic. However, digital checkouts remain, and even as physical checkouts start to rise again after March 2020, they do not rise back to where they were before.</p>
+
 					<img src="./static/vis1.PNG" style="width: 75%; margin-bottom: 30px;" alt="A stacked bar chart shows the amount of monthly checkouts between the years 2017 and 2022, separating them by physical or digital items. A sharp drop in checkouts overall can be seen starting in March 2020, corresponding with the onset of the COVID-19 pandemic." />
 				</div>
 			</div>
@@ -35,9 +36,10 @@
 
 				<h3>Variations in Checkouts Month-to-Month</h3>
 				<div id="vis2">
-					
+
+					<p class="body_text">Here, we looked more closely at the checkouts over a single year, starting all the way back in 2005 to 2019, seeing the slow but steady rise in digital checkouts and the drop in physical checkouts in 2020.</p>
+
 					<iframe src="./chart.html" style="width: 75%; height: 550px; margin-left: 25%;" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
-					<p class="body_text">Now, we can look more closely at the checkouts over a single year, starting all the way back in 2005 to 2020 and beyond.</p>
 				</div>
 
 			</div>
@@ -48,9 +50,10 @@
 
 				<h3>Subjects By Month</h3>
 				<div id="vis3">
+
+					<p class="body_text">So, the amount of checkouts have changed due to COVID and the method of checking out materials changed, but what about the content? By selecting a year or two on the right, we can look more closely at changes (or the lack thereof!) in the top 20 checked out subjects by month-to-month.</p>
 					
 					<iframe src="./SubjectsByMonth_Year.html" style="width: 95%; height: 450px; margin-left: 23%;" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
-					<p class="body_text">So, the amount of checkouts have changed due to COVID and the method of checking out materials changed, but what about the content? By selecting a year or two on the right, we can look more closely at changes (or the lack thereof!) in the top 20 checked out subjects by month-to-month.</p>
 				</div>
 			</div>
 		</section>
@@ -61,7 +64,7 @@
 
 				<div id="vis4">
 					<h3> Top 5 Titles Checked Out By Year </h3>
-					<p class="body_text"></p>
+					<p class="body_text">Notice any repeated top 5 items from year to year, such as "Educated" or "Becoming". How do their overall percentages between physical and digital checkouts shift?</p>
 				</div>
 
 				<div id="carouselContainer" class="carousel slide container">
@@ -1018,8 +1021,12 @@
 					</a>
 				</div>
 
-				<div class="usage_digital"><p class="caption" style="color: #FFFFFF;">Digital</p></div>
-				<div class="usage_physical"><p class="caption">Physical</p></div>
+				<div class="legend">
+
+					<div class="legend_digital"></div><p class="caption" style="margin-right:30px;">Digital</p>
+
+					<div class="legend_physical"></div><p class="caption">Physical</p>
+				</div>
 			</div>
 		</section>
 
